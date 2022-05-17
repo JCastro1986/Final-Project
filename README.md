@@ -11,13 +11,17 @@ Bootcamp Final Project
 # Role Distribution
 
 - Luis Carmona
+
 **MACHINE LEARNING**
 
 - Brenda Treviño
+
 **BASE DE DATOS**
 
 - Carlos Acosta
+
 **TECHNOLOGY**
 
 - Jorge Castro
+
 **GITHUB**
