@@ -8,6 +8,11 @@ Bootcamp Final Project
 - Carlos Acosta
 - Jorge Castro
 
+# Project Ideas
+
+1. Precios de la canasta básica.
+2. Comportamiento de la cartera.
+
 # Role Distribution
 
 - Luis Carmona
