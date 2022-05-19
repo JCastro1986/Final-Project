@@ -2,6 +2,7 @@
 Bootcamp Final Project
 
 # Team Members
+**TEAM #1**
 
 - Luis Carmona
 - Brenda Treviño
@@ -12,6 +13,12 @@ Bootcamp Final Project
 
 1. Precios de la canasta básica.
 2. Comportamiento de la cartera.
+3. Analysis on House Prices
+
+# Project Descrption
+
+1. 
+
 
 # Role Distribution
 
