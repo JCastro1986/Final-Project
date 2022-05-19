@@ -38,17 +38,40 @@ Bootcamp Final Project
 **MACHINE LEARNING**
 
 
+Team members present a provisional
+machine learning model that stands in
+for the final machine learning model
+and accomplishes the following:
+✓ Takes in data in from the provisional
+database
+✓ Outputs label(s) for input data
+
+
+
 - Brenda Treviño          ![GREEN](https://user-images.githubusercontent.com/95668609/168710002-99d861f8-b0bb-412f-9192-61469b66e969.jpg)
 
 
 **BASE DE DATOS**
 
 
+Team members present a provisional
+database that stands in for the final
+database and accomplishes the
+following:
+✓ Sample data that mimics the
+expected final database structure or
+schema
+✓ Draft machine learning module is
+connected to the provisional database
+
 - Carlos Acosta           ![RED](https://user-images.githubusercontent.com/95668609/168710010-bf423c03-283e-4bec-b723-0f166d338e10.jpg)
 
 
 **TECHNOLOGY**
 
+The team will be using supervised machine learning
+to target the price of house and flats, based on 
+data obatined from Webscrapping.
 
 - Jorge Castro            ![X](https://user-images.githubusercontent.com/95668609/168710022-ac0ded3c-4ac1-4e03-99b9-d7ce82f24de3.jpg)
 
