@@ -23,6 +23,14 @@ Bootcamp Final Project
 4. Make a clear and friendly visualizatoin unsing logitutes and latitudes to better present results using different filters such as:
   a) State location, Neighborhood, Type of hosehold, size(m2), number of rooms, etc. 
 
+*ADVICE*
+- Prepare our code to ensure what are we looking for.
+- Webscrapping for data.
+- What is my question? make a decision ans chose one and only one.
+- Best state to buy houses, where are most under/over valued houses, it is important to know if a house is under/over valued, the model needs to tell a story, etc.
+- The prediction has to be well stablished, need good data to answer the question.
+- Go far.
+
 # Role Distribution
 
 - Luis Carmona
