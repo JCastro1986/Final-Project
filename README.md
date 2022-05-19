@@ -5,9 +5,9 @@ Bootcamp Final Project
 **TEAM #1**
 
 - Luis Carmona
-- Brenda Treviño
+- Brenda Treviño Torrez
 - Carlos Acosta
-- Jorge Castro
+- Jorge Castro Molina
 
 # Project Ideas
 
@@ -48,4 +48,22 @@ Bootcamp Final Project
 **GITHUB**
 
 ![X](https://user-images.githubusercontent.com/95668609/168710022-ac0ded3c-4ac1-4e03-99b9-d7ce82f24de3.jpg)
+
+Main Branch
+✓ Includes a README.md
+README.md
+README.md must include:
+✓ Description of the communication
+protocols
+Individual Branches
+✓ At least one branch for each team
+member
+✓ Each team member has at least four
+commits from the duration of the first
+segment
+Note: The descriptions and
+explanations required in all other
+project deliverables should also be in
+your README.md as part of your
+outline, unless otherwise noted.
 
