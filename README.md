@@ -1,99 +1,69 @@
-# Final-Project
-Bootcamp Final Project
+# Analysis of Real Estate Prices in Mexico
+**Bootcamp Final Project**
 
-# Team Members
-**TEAM #1**
+## Overview
 
-- Luis Carmona
-- Brenda Treviño Torrez
-- Carlos Acosta
-- Jorge Castro Molina
+After analyising several options, we decided to select this project because it involves almost all topics covered in the course, from webscrappng, ETL, working with Pandas, SQL, reading csvs, visualization and machine learning.  Also we think it could be useful for people looking into buying a new home or simply for those seeking to maximize investing in real estate in Mexic.  Further, this analysis could expand in determining price changes overtime by scrapping information periodically.
 
-# Project Ideas
+The purpose of this analysis is to determine a model that predicts real estate prices by taking into consideration several features that answers the following questions:
 
-1. Precios de la canasta básica.
-2. Comportamiento de la cartera.
-3. Analysis on House & Flat Prices (Winner)
+1. Where are the places in Mexico with the highest and lowest prices per square meters by asset type (house, apartment, land)?
+2. According to the predicted prices, where are the best opportunities of undervalued assets?
 
-# Project Descrption
+Our analysis includes several steps to achieve our goal:
 
-1. Create a model using supervised machine learning to predict prices of houses & flats in an specific state located in Mexico based on data scrapped from the web.
-2. The model will work on a target prices based on our data to project the price of a house or flat based on the user preferences.
-  a) We will be having a comparason based on real prices to make an analysis and provide an under valued or over valued pirce of the house or flat.
-4. Make a clear and friendly visualizatoin unsing logitutes and latitudes to better present results using different filters such as:
-  a) State location, Neighborhood, Type of hosehold, size(m2), number of rooms, etc. 
+1. **Webscraping**.  Create a python code with beautiful soup and splinter to retreieve asset data from several webpages, such as metroscubicos.com and create a raw data csv.
+2. **ETL**. Raw data needs to be cleaned, transformed and add new information from other sources to generate a final SQL database.
+3. **ML model**. We will use a supervised linear regression machine learning model that helps us determine our price target variable, based on features such as location, type, land size, construction square meters, number of rooms, number of bathrooms, etc.
+4. **Dashboard**. We will create visualizations and interactions to display our results in Tableau.
 
-*ADVICE*
-- Prepare our code to ensure what are we looking for.
-- Webscrapping for data.
-- What is my question? make a decision ans chose one and only one.
-- Best state to buy houses, where are most under/over valued houses, it is important to know if a house is under/over valued, the model needs to tell a story, etc.
-- The prediction has to be well stablished, need good data to answer the question.
-- Go far.
+## Team Members and roles
 
-# Role Distribution
-
-- Luis Carmona            ![BLUE](https://user-images.githubusercontent.com/95668609/168709953-7802ff10-1aef-4f74-861c-6ebfd9a668d3.jpg)
-
-**MACHINE LEARNING**
+|Member        |Segment 1 Role                               |
+|:------------:|:-------------------------------------------:|
+|Brenda Treviño|ML model ![Triangle](/Resources/triangle.png)|
+|Luis Carmona  |Technology ![Red](/Resources/x.png)          |
+|Carlos Acosta |Database ![Green](/Resources/circle.png)     |
+|Jorge Castro  |Repository ![Square](/Resources/square.png)  |
 
 
-Team members present a provisional
-machine learning model that stands in
-for the final machine learning model
-and accomplishes the following:
-✓ Takes in data in from the provisional
-database
-✓ Outputs label(s) for input data
+## Resources and Techonology
+
+- Data source: raw data scraped with from real estate websites.  This raw data will be stored as csv.
+
+- ETL process: using Pandas for reading and transforming csv to dataframes for cleaning and transformation, as well as to merge additional data.  Resulting data will be stored into an SQL database.
+
+- ML model: We'll use scikit libraries to create a linear regression model and test other models to get the best accuracy for pricing prediction.
+
+- Dashboard: Using Tableau we will import our data and try to use geographical coordinates to show our analyses by entities.
+
+- Software use to perform the analysis: Jupyter Notebook v6.4.5, Pandas, , SQLite, Scikit-learn v0.24.2, Tensorflow 2.0 and Tableau.
+
+## Github
+
+EXPLAIN BRANCHES CREATED AND COMMITS
+
+### Communication Protocols
+
+For the purpose of communicating among the team members, we decided to create a group in Whatsapp.  The reasoning as why not to use Slack is because all team members have different activities and schedules so checking Slack throughout the day is not as common as checking our smartphones for general messages.
+
+It seems to be working.
+
+Also, we decided to establish zoom meetings, outside those for classes, if there is something we need to review among us.
+
+## Database
+
+The following image shows our two main tables in our database:
+
+![database tables](/Resources/relationalTables.png)
+
+Besides the data from the webscraping we will obtain information regarding location (lat, lon) for each ***municipio*** so that we can plot them on a map, and make analysis by zip codes.
+
+Our mockup database is /Resources/mockData.csv and contains what we think we might get from the webscrapping process. The following image shows the structure of the csv loaded into a pandas DataFrame:
+
+![database preview](/Resources/databaseDF.png)
 
 
+## Machine Learning model
 
-- Brenda Treviño          ![GREEN](https://user-images.githubusercontent.com/95668609/168710002-99d861f8-b0bb-412f-9192-61469b66e969.jpg)
-
-
-**BASE DE DATOS**
-
-
-Team members present a provisional
-database that stands in for the final
-database and accomplishes the
-following:
-✓ Sample data that mimics the
-expected final database structure or
-schema
-✓ Draft machine learning module is
-connected to the provisional database
-
-- Carlos Acosta           ![RED](https://user-images.githubusercontent.com/95668609/168710010-bf423c03-283e-4bec-b723-0f166d338e10.jpg)
-
-
-**TECHNOLOGY**
-
-The team will be using supervised machine learning
-to target the price of house and flats, based on 
-data obatined from Webscrapping.
-
-- Jorge Castro            ![X](https://user-images.githubusercontent.com/95668609/168710022-ac0ded3c-4ac1-4e03-99b9-d7ce82f24de3.jpg)
-
-
-**GITHUB**
-
-
-Main Branch
-✓ Includes a README.md
-README.md
-README.md must include:
-✓ Description of the communication
-protocols
-Individual Branches
-✓ At least one branch for each team
-member
-✓ Each team member has at least four
-commits from the duration of the first
-segment
-Note: The descriptions and
-explanations required in all other
-project deliverables should also be in
-your README.md as part of your
-outline, unless otherwise noted.
-
+EXPLAIN THE MODEL, WHERE IS IT AND PASTE IMAGES
