@@ -14,7 +14,7 @@ Our analysis includes several steps to achieve our goal:
 
 1. **Webscraping**.  Create a python code with beautiful soup and splinter to retreieve asset data from several webpages, such as metroscubicos.com and create a raw data csv.
 2. **ETL**. Raw data needs to be cleansed, transformed and add new information from other sources to generate a final SQL database.
-3. **ML model**. We will use a supervised linear regression machine learning model that helps us determine our price target variable, based on features such as location, type, land size, construction square meters, number of rooms, number of bathrooms, etc. We will be using a linear regression model under the assumption that the reationship between the price (dependent continuous variable) and the other more explanatory house features is linear. 
+3. **ML model**. We will use a supervised linear regression machine learning model that helps us determine our price target variable based on features such as location, type, land size, construction square meters, number of rooms, number of bathrooms, etc.
 4. **Dashboard**. We will create visualizations and interactions to display our results in Tableau.
 
 ## Team Members and roles
@@ -66,4 +66,14 @@ Our mockup database is /Resources/mockData.csv and contains what we think we mig
 
 ## Machine Learning model
 
-EXPLAIN THE MODEL, WHERE IS IT AND PASTE IMAGES
+For this particular project out model will be done with supervised learning, using examples and labels to find patterns in our data. We will be using a linear regression model under the assumption that the reationship between the price (dependent continuous variable) and the other more explanatory house features is linear. 
+
+It is also worth mentioning that this is a regression model because we wnt to predict a numerical outcome (price). Because of this, our first approach is the Random Forest classifier, in order to learn from data and to aggregate their resulting predictions.
+
+The following image shows our first attempt to model our data after all the necessary imports:
+
+![ML_model1](Resources/ML_model1.PNG)
+
+We are aware that this is our first approach and that we will have to go through a number of iterations and even alterations to get our model up to a high standard.
+
+
