@@ -3,7 +3,7 @@
 
 ## Overview
 
-After analyising several options, we decided to select this project because it involves almost all topics covered in the course, from webscrappng, ETL, working with Pandas, SQL, reading csvs, visualization and machine learning.  Also we think it could be useful for people looking into buying a new home or simply for those seeking to maximize investing in real estate in Mexic.  Further, this analysis could expand in determining price changes overtime by scrapping information periodically.
+After analyizing several options, we decided to select this project because it involves almost all topics covered in the course, from webscrappng, ETL, working with Pandas, SQL, reading csvs, visualization and machine learning.  Also, we think it could be useful for people looking into buying a new home or simply for those seeking to maximize investing in real estate in Mexico.  Furthermore, this analysis could expand in determining price changes overtime by scrapping information periodically.
 
 The purpose of this analysis is to determine a model that predicts real estate prices by taking into consideration several features that answers the following questions:
 
@@ -13,8 +13,8 @@ The purpose of this analysis is to determine a model that predicts real estate p
 Our analysis includes several steps to achieve our goal:
 
 1. **Webscraping**.  Create a python code with beautiful soup and splinter to retreieve asset data from several webpages, such as metroscubicos.com and create a raw data csv.
-2. **ETL**. Raw data needs to be cleaned, transformed and add new information from other sources to generate a final SQL database.
-3. **ML model**. We will use a supervised linear regression machine learning model that helps us determine our price target variable, based on features such as location, type, land size, construction square meters, number of rooms, number of bathrooms, etc.
+2. **ETL**. Raw data needs to be cleansed, transformed and add new information from other sources to generate a final SQL database.
+3. **ML model**. We will use a supervised linear regression machine learning model that helps us determine our price target variable, based on features such as location, type, land size, construction square meters, number of rooms, number of bathrooms, etc. We will be using a linear regression model under the assumption that the reationship between the price (dependent continuous variable) and the other more explanatory house features is linear. 
 4. **Dashboard**. We will create visualizations and interactions to display our results in Tableau.
 
 ## Team Members and roles
