@@ -1,6 +1,8 @@
 # Analysis of Real Estate Prices in Mexico
 
-**Bootcamp Final Project**
+- HOUSING PRICES IN MEXICO
+
+# Team Members
 
 ![PricingUp](/Resources/PricingUp.png)
 
