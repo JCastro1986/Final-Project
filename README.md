@@ -28,7 +28,6 @@ In this first stage of the project, we’ll download the data from `metroscubico
 
 ![metcu](/Resources/metcu.png)
 
-
 ### Questions to answer
 
 Considering the features before mentioned, the model will answer the following questions: 
