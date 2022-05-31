@@ -51,13 +51,12 @@ To achieve our goal, we’ll develop and code at least the next steps.
 
 ## Team Members and roles
 
-|Avatar                         |Member        |Role: Segment 1| Icon                                             |
-|:-----------------------------:|:------------:|:-------------:|:------------------------------------------------:|
-![Brenda](/Resources/Brenda.png)|Brenda Treviño|ML model       |![triangle](/Resources/triangle.png)              |
-![Luis](/Resources/Luis.png)    |Luis Carmona  |Technology     |![x](/Resources/x.png)                            |
-![Carlos](/Resources/Carlos.png)|Carlos Acosta |Database       |![circle](/Resources/circle.png)                  |
-![Jorge](/Resources/Jorge.png)  |Jorge Castro  |Repository     |![square](/Resources/FB_IMG_1587072060227.jpg)    |
-
+|Avatar                         |Member        |Role: Segment 1| Icon                               |
+|:-----------------------------:|:------------:|:-------------:|:----------------------------------:|
+![Brenda](/Resources/Brenda.png)|Brenda Treviño|ML model       |![triangle](/Resources/triangle.png)|
+![Luis](/Resources/Luis.png)    |Luis Carmona  |Technology     |![x](/Resources/x.png)              |
+![Carlos](/Resources/Carlos.png)|Carlos Acosta |Database       |![circle](/Resources/circle.png)    |
+![Jorge](/Resources/Jorge.png)  |Jorge Castro  |Repository     |![square](/Resources/square.png)    |
 
 ## Resources and Technology
 
