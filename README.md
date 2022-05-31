@@ -58,7 +58,6 @@ To achieve our goal, we’ll develop and code at least the next steps.
 ![Carlos](/Resources/Carlos.png)|Carlos Acosta |Database       |![circle](/Resources/circle.png)    |
 ![Jorge](/Resources/Jorge.png)  |Jorge Castro  |Repository     |![square](/Resources/square.png)    |
 
-
 ## Resources and Technology
 
 We’ll perform the steps mentioned before using the following programs and sources:
