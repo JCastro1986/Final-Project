@@ -4,6 +4,12 @@
 
 # Team Members
 
+- HOUSING PRICES IN MEXICO
+
+You can watch the following presentation: [PROPERTIES PRICE ESTIMATION](https://docs.google.com/presentation/d/17rQp70f1DyF2N-gzHGjLKhIUiLSXYhmO-v3CHtlMWuU/edit?usp=sharing)
+
+# Team Members
+
 ![PricingUp](/Resources/PricingUp.png)
 
 ## Overview
