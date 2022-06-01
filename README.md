@@ -2,7 +2,11 @@
 
 **Bootcamp Final Project**
 
+- HOUSING PRICES IN MEXICO
+
 You can watch the following presentation: [PROPERTIES PRICE ESTIMATION](https://docs.google.com/presentation/d/17rQp70f1DyF2N-gzHGjLKhIUiLSXYhmO-v3CHtlMWuU/edit?usp=sharing)
+
+# Team Members
 
 ![PricingUp](/Resources/PricingUp.png)
 
@@ -10,7 +14,7 @@ You can watch the following presentation: [PROPERTIES PRICE ESTIMATION](https://
 
 ### Topic
 
-Given the importance and growth that the real estate has shown in Mexico in the last few years, we´ll analyze and measure the prices of housing and commercial properties considering important features like location, land and usable area, age, number of rooms, bathrooms, and parking, etc., by creating a model that will predict the real estate prices.
+Given the importance and growth that the real estate has shown in Mexico in the last few years, we´ll analyze and measure the prices of housing and commercial properties considering important features like location, ground and construction surface, age, number of rooms, bathrooms, and parking, etc., by creating a model that will predict the downs and rises of the real estate prices.
 
 ### Justification
 
@@ -27,23 +31,14 @@ After analyzing several options, we decided to select this topic for the followi
 In this first stage of the project, we’ll download the data from `metroscubicos.com`, the third most visited webpage in Mexico which is associated with `Mercadolibre.com`, according to the marketing agency “Impactum”
 
 ![metcu](/Resources/metcu.png)
-                                    
-|Features     |             |                 |
-|:-----------:|:-----------:|:---------------:|
-|Estate       |Price        |Bathroom         |
-|City or town |Land         |Parking          |
-|Neighborhood |Usable area  |Age              |
-|Property type|Rooms        |Maintenance Cost |
 
 ### Questions to answer
 
 Considering the features before mentioned, the model will answer the following questions: 
 
-**1.** Which cities have the higher and lower property prices in Mexico?
+**1.** Where are the places in Mexico with the highest and lowest prices per square meter by asset type (house, apartment, land)?
 
-**2.** Considering the features what could be the price of a new property?
-
-**3.** Wheres is the best place to buy a property in Mexico?
+**2.** According to the predicted prices, where are the best opportunities for undervalued assets?
 
 ### Project steps
 
@@ -53,8 +48,6 @@ To achieve our goal, we’ll develop and code at least the next steps.
 
 `2.` **ETL**. Raw data needs to be cleaned, transformed, and add new information from other sources to generate a final SQL database.
 
-![data_e](/Resources/data_e.png)
-
 `3.` **ML model**. We will use a supervised linear regression machine learning model that helps us determine the price target variable based on features such as location, type, land size, construction square meters, number of rooms, number of bathrooms, etc.
 
 `4.` **Dashboard**. We will create visualizations and interactions to display our results in Tableau.
@@ -63,11 +56,11 @@ To achieve our goal, we’ll develop and code at least the next steps.
 
 |Avatar                         |Member        |Role: Segment 1| Icon                               |
 |:-----------------------------:|:------------:|:-------------:|:----------------------------------:|
-![Brenda](/Resources/Brenda.png)|Brenda Treviño|ML model       |![x](/Resources/x.png)              |
-![Luis](/Resources/Luis.png)    |Luis Carmona  |Technology     |![triangle](/Resources/triangle.png)|
-![Carlos](/Resources/Carlos.png)|Carlos Acosta |Database       |![square](/Resources/square.png)    |
-![Jorge](/Resources/Jorge.png)  |Jorge Castro  |Repository     |![circle](/Resources/circle.png)    |
-  
+![Brenda](/Resources/Brenda.png)|Brenda Treviño|ML model       |![triangle](/Resources/triangle.png)|
+![Luis](/Resources/Luis.png)    |Luis Carmona  |Technology     |![x](/Resources/x.png)              |
+![Carlos](/Resources/Carlos.png)|Carlos Acosta |Database       |![circle](/Resources/circle.png)    |
+![Jorge](/Resources/Jorge.png)  |Jorge Castro  |Repository     |![square](/Resources/square.png)    |
+
 ## Resources and Technology
 
 We’ll perform the steps mentioned before using the following programs and sources:
@@ -102,7 +95,15 @@ Also, we decided to establish zoom meetings, outside those for classes, if there
 
 ### Branches
 
-In this second stage, according to our roles, everybody updates the `main`, `ML_Model`, `Data`, and `Readme` branches, to contribute the complete data after the ETL process, and the debugging of the machine learning model. In addition, everybody contributes to the presentation, this Readme, and the dashboard.
+In this first stage, according to our roles, we created the main branch, and the individual branches as follows:
+
+**A.** Jorge created the Github repository, added the `Branch_Testing` to verify the functionality of the branches, and added the `add-license-1` to protect the project with the MIT license.
+
+**B.** Brenda created the `ML_Model` branch in which she added the model muck up of linear regression.
+
+**C.** Carlos created the `Data` branch and he added the code to scrape the information from the source, and the code to extract, transform and load the data.
+
+**D.** Luis created the `Readme` branch and contributed to improving the presentation of the project, by adding some images and adequate content.
 
 ## Database
 
