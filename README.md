@@ -145,6 +145,8 @@ In the beginning, the first R Score was 25%.
 
 `1.` **First Attempt**
 
+![First Attempt](Resources/R-Score_25%.jpeg)
+
 (/Resources/R-Score_25%.jpeg)
 
 We continue working to improve the model, it went better when it got to 35%.
