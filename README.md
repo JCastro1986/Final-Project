@@ -81,7 +81,7 @@ We’ll perform the steps mentioned before using the following programs and sour
 
 - SQlite Process: we’ll use SQlite to store our cleaned data thet was transform and clean, we will use SQlite to collect our data for our Model process.
  
-![SQlite](/Resources/SQlite.jpg) 
+![SQlite](/Resources/SQlite%20Image.jpg) 
 
 - ML model: we'll use scikit libraries to create a linear regression model and test other models to get the best accuracy for real estate pricing prediction.
 
@@ -145,24 +145,23 @@ In the beginning, the first R Score was 25%.
 
 `1.` **First Attempt**
 
-![](Resources/R-Score_25%.jpeg)
+![](Resources/R-Score_25%25.jpeg)
 
 We continue working to improve the model, it went better when it got to 35%.
 
 `2.` **Second Attempt**
 
-![](Resources/R-Score_35%.jpeg)
+![](Resources/R-Score_35%25.jpg)
 
 However we wanted more, so more attempts were made...
 
 `3.` **Third Attempt**
 
-![](Resources/R-Score_42%.jpeg)
+![](Resources/R-Score_42%25.jpeg)
 
 We continue improving our model, and by using Random Forest Regressor we were able to obtain our best R score so far, 67%
 
 `4.` **Fourth Attempt**
 
-![](Resources/R-Score_67%.jpeg)
+![](Resources/R-Score_67%25.jpeg)
 
-![](Resources/ML_model1.PNG)
