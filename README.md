@@ -52,9 +52,11 @@ To achieve our goal, we’ll develop and code at least the next steps.
 
 `2.` **ETL**. Raw data needs to be cleaned, transformed, and add new information from other sources to generate a final SQL database.
 
-`3.` **ML model**. We will use a supervised linear regression machine learning model that helps us determine the price target variable based on features such as location, type, land size, construction square meters, number of rooms, number of bathrooms, etc.
+`3.` **SQlite**. After the raw data has been cleaned and transformed we stored the new data into an SQL table "SQlite".
 
-`4.` **Dashboard**. We will create visualizations and interactions to display our results in Tableau.
+`4.` **ML model**. We will use a supervised linear regression machine learning model that helps us determine the price target variable based on features such as location, type, land size, construction square meters, number of rooms, number of bathrooms, etc.
+
+`5.` **Dashboard**. We will create visualizations and interactions to display our results in Tableau.
 
 ## Team Members and roles
 
