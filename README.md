@@ -145,22 +145,24 @@ In the beginning, the first R Score was 25%.
 
 `1.` **First Attempt**
 
-Resources/ML_model1.PNG
-
-Resources/R-Score_25%.jpeg
-
-(Resources/R-Score_25%.jpeg)
-
-![Branch_Testing](/Resources/R-Score_25%.jpeg)
+![](Resources/R-Score_25%.jpeg)
 
 We continue working to improve the model, it went better when it got to 35%.
 
-`2.` **Second Attempt**.(Resources/R-Score_35%.jpeg)
+`2.` **Second Attempt**
+
+![](Resources/R-Score_35%.jpeg)
 
 However we wanted more, so more attempts were made...
 
-`3.` **Third Attempt**.(Resources/R-Score_42%.jpeg)
+`3.` **Third Attempt**
+
+![](Resources/R-Score_42%.jpeg)
 
 We continue improving our model, and by using Random Forest Regressor we were able to obtain our best R score so far, 67%
 
-`4.` **Fourth Attempt**.(Resources/R-Score_67%.jpeg)
+`4.` **Fourth Attempt**
+
+![](Resources/R-Score_67%.jpeg)
+
+![](Resources/ML_model1.PNG)
