@@ -145,6 +145,10 @@ In the beginning, the first R Score was 25%.
 
 `1.` **First Attempt**
 
+Resources/ML_model1.PNG
+
+Resources/R-Score_25%.jpeg
+
 (Resources/R-Score_25%.jpeg)
 
 ![Branch_Testing](/Resources/R-Score_25%.jpeg)
