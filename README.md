@@ -138,3 +138,21 @@ The following image shows our first attempt to model our data after all the nece
 ![ML_model1](Resources/ML_model1.PNG)
 
 We are aware that this is our first approach and that we will have to go through several iterations and even alterations to get our model up to a high standard.
+
+## Training and Improving our Machine Learning model
+
+In the beginning, the first R Score was 25%.
+
+`1.` **First Attempt**(Resources/R-Score_25%.jpeg)
+
+We continue working to improve the model, it went better when it got to 35%.
+
+`2.` **Second Attempt**(Resources/R-Score_35%.jpeg)
+
+However we wanted more, so more attempts were made...
+
+`3.` **Third Attempt**(Resources/R-Score_42%.jpeg)
+
+We continue improving our model, and by using Random Forest Regressor we were able to obtain our best R score so far, 67%
+
+`4.` **Fourth Attempt**(Resources/R-Score_67%.jpeg)
