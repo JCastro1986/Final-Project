@@ -143,7 +143,9 @@ We are aware that this is our first approach and that we will have to go through
 
 In the beginning, the first R Score was 25%.
 
-`1.` **First Attempt**.(Resources/R-Score_25%.jpeg)
+`1.` **First Attempt**
+
+(/Resources/R-Score_25%.jpeg)
 
 We continue working to improve the model, it went better when it got to 35%.
 
