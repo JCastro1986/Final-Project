@@ -81,7 +81,7 @@ We’ll perform the steps mentioned before using the following programs and sour
 
 - SQlite Process: we’ll use SQlite to store our cleaned data thet was transform and clean, we will use SQlite to collect our data for our Model process.
  
-![SQlite](/Resources/SQlite%20Image.jpg) 
+![SQlite](/Resources/SQliteImage.jpg) 
 
 - ML model: we'll use scikit libraries to create a linear regression model and test other models to get the best accuracy for real estate pricing prediction.
 
