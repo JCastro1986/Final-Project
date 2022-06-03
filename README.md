@@ -127,7 +127,7 @@ Our mockup database is /Resources/mockData.csv and contains what we think we mig
 
 ![database preview](/Resources/databaseDF.png)
 
-## Database Obtaintion Process
+## Data Retreival Process
 
 `1.` We scraped links of prices houese from a web page metroscubicos.com ![image](https://user-images.githubusercontent.com/95668609/171856973-6917099b-c4d8-43d1-a83a-5ff2caba6a26.png)
 
