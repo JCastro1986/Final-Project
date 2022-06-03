@@ -10,7 +10,7 @@ You can watch the following presentation: [PROPERTIES PRICE ESTIMATION](https://
 
 You can watch the Storyboard on Google Slide: [PROPERTIES PRICE ESTIMATION](https://docs.google.com/presentation/d/1oBZPOv5VrmcHvKBZTlqlLSLCKziRQfEUWi8U0p8uQz8/edit?usp=sharing)
 
-# Team Members
+# HOUSING PRICES IN MEXICO
 
 ![PricingUp](/Resources/PricingUp.png)
 
@@ -115,7 +115,7 @@ In this first stage, according to our roles, we created the main branch, and the
 
 **D.** Luis created the `Readme` branch and contributed to improving the presentation of the project, by adding some images and adequate content.
 
-## Database
+## Database Process
 
 The following image shows the two main tables in our database:
 
@@ -127,7 +127,25 @@ Our mockup database is /Resources/mockData.csv and contains what we think we mig
 
 ![database preview](/Resources/databaseDF.png)
 
-## Machine Learning model
+## Database Obtaintion Process
+
+`1.` We scraped links of prices houese from a web page metroscubicos.com ![image](https://user-images.githubusercontent.com/95668609/171856973-6917099b-c4d8-43d1-a83a-5ff2caba6a26.png)
+
+`2.` We were able to obtain a ton of links with detail information on house prices per each State in Mexico. T
+
+`3.` All this information was ater combined and concentrated into 32 CSV files. It is importantn 
+
+`4.` We extracted the data from the 32 files and concentrated the information into a single file.
+
+`5.` With the single file ready we performed the ETL process. The data was messy and needed to be cleaned deeply.
+
+`6.` After our data was cleaned we sotered it into a table using SQlite in order to store our results.
+
+`7.` After our data was cleaned we sotered it into a table using SQlite in order to store our results.
+
+`8.` After we had our data base ready we started our Machine Learning Model.
+
+## Machine Learning Model
 
 For this project our model will be done with supervised learning, using examples and labels to find patterns in our data. We will be using a linear regression model under the assumption that the relationship between the price (dependent continuous variable) and the other more explanatory house features is linear. 
 
