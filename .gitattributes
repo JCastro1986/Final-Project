@@ -1,0 +1,2 @@
+modeloCasasCP.pkl filter=lfs diff=lfs merge=lfs -text
+modeloCasas.pkl filter=lfs diff=lfs merge=lfs -text
