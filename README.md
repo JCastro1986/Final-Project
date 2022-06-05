@@ -139,9 +139,15 @@ Our mockup database is /Resources/mockData.csv and contains what we think we mig
 
 `5.` With the single file ready we performed the ETL process. The data was messy and needed to be cleaned deeply.
 
-`6.` After our data was cleaned we sotered it into a table using SQlite in order to store our results.
+![](Resources/ETLclean1.png)
 
-`7.` After our data was cleaned we sotered it into a table using SQlite in order to store our results.
+`6.` After our data was cleaned we merged the data into a single file. 
+
+![](Resources/ETLmerge.png)
+
+`7.` After we add the final file containing all the information we created a table using SQlite in order to store our results.
+
+![](Resources/ETLsql.png)
 
 `8.` After we had our data base ready we started our Machine Learning Model.
 
