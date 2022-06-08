@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Add a New Message {% endblock %}</h1>
+    <form method="POST">
+        <label for="type">Entity</label>
+        <br>
+        <input type="text" name="estadoSelecc"
+               placeholder="Aguascalientes"
+               value="{{ request.form['estadoSelecc'] }}"></input>
+        <br>
+        <label for="type">Type</label>
+        <br>
+        <input type="text" name="type"
+               placeholder="Casas Departamentos Terrenos"
+               value="{{ request.form['type'] }}"></input>
+        <br>
+        <label for="m2Construccion">Construction sq. meters</label>
+        <br>
+        <input type="text" name="m2Construccion"
+               placeholder="100"
+               value="{{ request.form['m2Construccion'] }}"></input>
+        <br>
+        <label for="m2Terreno">Land surface sq. meters</label>
+        <br>
+        <input type="text" name="m2Terreno"
+               placeholder="200"
+               value="{{ request.form['m2Terreno'] }}"></input>
+        <br>
+        <label for="banos">Number of bathrooms</label>
+        <br>
+        <input type="text" name="banos"
+               placeholder="2"
+               value="{{ request.form['banos'] }}"></input>
+        <br>
+        <label for="estacionamientos">Number of parking spaces</label>
+        <br>
+        <input type="text" name="estacionamientos"
+               placeholder="2"
+               value="{{ request.form['estacionamientos'] }}"></input>
+        <br>
+        <label for="antiguedad">Age of property</label>
+        <br>
+        <input type="text" name="antiguedad"
+               placeholder="5"
+               value="{{ request.form['antiguedad'] }}"></input>
+        <br>    
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}
