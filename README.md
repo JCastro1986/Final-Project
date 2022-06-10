@@ -109,7 +109,7 @@ In this first stage, according to our roles, we created the main branch, and the
 
 **A.** Jorge created the Github repository, added the `Branch_Testing` to verify the functionality of the branches, and added the `add-license-1` to protect the project with the MIT license.
 
-**B.** Brenda created the `ML_Model` branch in which she added the model muck up of linear regression.
+**B.** Brenda created the `ML_Model` branch in which she added the model mock up of linear regression.
 
 **C.** Carlos created the `Data` branch and he added the code to scrape the information from the source, and the code to extract, transform and load the data.
 
