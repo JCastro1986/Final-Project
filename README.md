@@ -196,7 +196,13 @@ It is also worth mentioning that this is a regression model because we want to p
 
 Limitations of the model have to do with the fact that we are using states as features and although they provide sufficient information, a division by municipalities, neighborhoods or zip codes would probably provide a higher accuracy. However, data is not easily obtained, and it might result in overfitting.
 
-## Training and Improving our Machine Learning model
+#### Changes in model
+
+The main changes in our model have to do with the different ways to use our features. We also tested AdaBoost Regressor, Gradient Boosting Regressor and Decision Tree Regressor and HistGradient Boosting Regressor, but we kept Random Forest Regressor because it provided the best results.
+
+For the apartments model, we decided to test the same tools and kept the HistGradientBoosting Regressor since it provided the highest accuracy scores.
+
+### Training and Improving our Machine Learning model
 
 In the beginning, the first R Score was 25%.
 
@@ -222,3 +228,23 @@ We continue improving our model, and by using Random Forest Regressor we were ab
 
 ![](Resources/R-Score_67%25.jpeg)
 
+### Current Accuracy Scores
+
+**Houses Model**
+
+We are currently working with a 72%
+
+![House_model72](https://user-images.githubusercontent.com/22451540/173114247-71c9d98e-7e1b-4ce6-afcb-64bda087960d.PNG)
+
+**Apartments Model**
+
+It has 60% accuracy
+
+![Apartment_Model60](https://user-images.githubusercontent.com/22451540/173114601-8026b03d-9ba8-4034-b416-29c03cfd8c61.PNG)
+
+**Land Model**
+
+Working with 42.21% accuracy
+
+
+![Land_Model40](https://user-images.githubusercontent.com/22451540/173114931-e1030c19-e76d-43d3-a333-62a4eca36647.PNG)
