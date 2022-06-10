@@ -173,7 +173,7 @@ The data was taken through a web scraping process from a real estate website. Th
 
 `4.`	Reduce the data. We planned on building three different models, one for each type of properties analyzed (houses, apartments and land) so we kept only the relevant columns for each one. 
 
-### Feature engineering and feature selection
+#### Feature engineering and feature selection
 
 *Feature Engineering*
 - As it was mentioned before, the dataset had a significant number of missing values. For features like parking spaces, all missing values were filled with 0, this numerical imputation would allow us to consider the feature without eliminating rows with missing values.
