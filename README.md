@@ -190,7 +190,7 @@ We used train_test_split from the sklearn.model_selection library to split our d
 
 For this project our model will be done with supervised learning, using examples and labels to find patterns in our data. We will be using a linear regression model under the assumption that the relationship between the price (dependent continuous variable) and the other more explanatory house features is linear. 
 
-It is also worth mentioning that this is a regression model because we want to predict a numerical outcome (price). Because of this, our first approach is the Random Forest classifier, to learn from data and aggregate their resulting predictions.
+It is also worth mentioning that this is a regression model because we want to predict a numerical outcome (price). Because of this, our first approach is the Random Forest Regressor, to learn from data and aggregate their resulting predictions.
 
 Limitations of the model have to do with the fact that we are using states as features and although they provide sufficient information, a division by municipalities, neighborhoods or zip codes would probably provide a higher accuracy. However, data is not easily obtained, and it might result in overfitting.
 
