@@ -188,6 +188,8 @@ The data was taken through a web scraping process from a real estate website. Th
 
 We used train_test_split from the sklearn.model_selection library to split our data into training and testing sets. We used random sampling to protect the data from any bias and because we didn’t input a test size in the parameters it was set by default to 0.25, which mean the train was automatically set to 0.75.
 
+#### Model choice
+
 For this project our model will be done with supervised learning, using examples and labels to find patterns in our data. We will be using a linear regression model under the assumption that the relationship between the price (dependent continuous variable) and the other more explanatory house features is linear. 
 
 It is also worth mentioning that this is a regression model because we want to predict a numerical outcome (price). Because of this, our first approach is the Random Forest Regressor, to learn from data and aggregate their resulting predictions.
