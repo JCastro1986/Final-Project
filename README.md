@@ -156,9 +156,12 @@ Our mockup database is /Resources/mockData.csv and contains what we think we mig
 #### Data preprocessing
 
 The data was taken through a web scraping process from a real estate website. This meant that the information was accurate and updated but we dealt with other issues like the number of features added for each estate. Once we had the data, we took the following steps:
+
 `1.` Assess the quality of the data. We verified that the data was reliable, and that the information was accurate. At a first glance, it was possible to see that we were working with different data types, that some outliers might skew our analysis and we saw that there were some missing data that needed to be managed.	
+
 `2.` Clean the data. 
-``a.`` All unnecessary columns were eliminated, IDs, links and other internal identification codes were not relevant for the machine learning model. 
+
+   ``a.`` All unnecessary columns were eliminated, IDs, links and other internal identification codes were not relevant for the machine learning model. 
 
 b.	Unified the format some data was shown on the website like dates, square meters, and prices.
 c.	Identified outliers and manage them accordingly, sometimes through binning and sometimes getting rid of them
