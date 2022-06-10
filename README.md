@@ -161,23 +161,28 @@ The data was taken through a web scraping process from a real estate website. Th
 
 `2.` Clean the data. 
 
-   ``a.`` All unnecessary columns were eliminated, IDs, links and other internal identification codes were not relevant for the machine learning model. 
+ a. All unnecessary columns were eliminated, IDs, links and other internal identification codes were not relevant for the machine learning model. 
+ b.	Unified the format some data was shown on the website like dates, square meters, and prices.
+ c.	Identified outliers and manage them accordingly, sometimes through binning and sometimes getting rid of them
+ d.	Evaluate missing data, some could be filled with information from other columns, and in other cases we fill in missing data. 
+ 
+`3.`	Transform the data. In order to prepare the data for the analysis we had to transform some variables to its logarithmic expression. OneHotEncoder was used to factor in each of the states.
 
-b.	Unified the format some data was shown on the website like dates, square meters, and prices.
-c.	Identified outliers and manage them accordingly, sometimes through binning and sometimes getting rid of them
-d.	Evaluate missing data, some could be filled with information from other columns, and in other cases we fill in missing data. 
-3.	Transform the data. In order to prepare the data for the analysis we had to transform some variables to its logarithmic expression. OneHotEncoder was used to factor in each of the states.
-4.	Reduce the data. We planned on building three different models, one for each type of properties analyzed (houses, apartments and land) so we kept only the relevant columns for each one. 
-### Description of feature engineering and feature selection, with decision making process
-Feature Engineering
-As it was mentioned before, the dataset had a significant number of missing values. For features like parking spaces, all missing values were filled with 0, this numerical imputation would allow us to consider the feature without eliminating rows with missing values.
-For the handling of outliers, we opted for removal in certain features like rooms, bathrooms or square meters. Capping was considered but an arbitrary value had a negative impact in the accuracy level of our model. 
-Even after handling outliers some features still showed some sort of skewed distribution. We used Log Transform for the features of prices and square meters (floor area and lot area).
-Feature Selection 
-In order to decide which features to keep for our model, we analyzed the correlation between the different variables and the price of the property. High correlations (0.44 and 0.49) were found between lot area and floor area with price. The number of bathrooms and the number of parking spaces also showed significant correlation (0.47 and 0.44, respectively) with the price.
-Other features, like latitude and longitude, although useful for the visualization of our data, proved to impact negatively our model, so we decided to eliminate it from our dataset.
+`4.`	Reduce the data. We planned on building three different models, one for each type of properties analyzed (houses, apartments and land) so we kept only the relevant columns for each one. 
 
-### How data was split into training and testing sets
+### Feature engineering and feature selection
+
+*Feature Engineering*
+- As it was mentioned before, the dataset had a significant number of missing values. For features like parking spaces, all missing values were filled with 0, this numerical imputation would allow us to consider the feature without eliminating rows with missing values.
+- For the handling of outliers, we opted for removal in certain features like rooms, bathrooms or square meters. Capping was considered but an arbitrary value had a negative impact in the accuracy level of our model. 
+- Even after handling outliers some features still showed some sort of skewed distribution. We used Log Transform for the features of prices and square meters (floor area and lot area).
+
+*Feature Selection* 
+- In order to decide which features to keep for our model, we analyzed the correlation between the different variables and the price of the property. High correlations (0.44 and 0.49) were found between lot area and floor area with price. The number of bathrooms and the number of parking spaces also showed significant correlation (0.47 and 0.44, respectively) with the price.
+- Other features, like latitude and longitude, although useful for the visualization of our data, proved to impact negatively our model, so we decided to eliminate it from our dataset.
+
+#### Data split into training and testing sets
+
 We used train_test_split from the sklearn.model_selection library to split our data into training and testing sets. We used random sampling to protect the data from any bias and because we didn’t input a test size in the parameters it was set by default to 0.25, which mean the train was automatically set to 0.75.
 
 For this project our model will be done with supervised learning, using examples and labels to find patterns in our data. We will be using a linear regression model under the assumption that the relationship between the price (dependent continuous variable) and the other more explanatory house features is linear. 
