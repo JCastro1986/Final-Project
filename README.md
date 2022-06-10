@@ -162,8 +162,11 @@ The data was taken through a web scraping process from a real estate website. Th
 `2.` Clean the data. 
 
  a. All unnecessary columns were eliminated, IDs, links and other internal identification codes were not relevant for the machine learning model. 
+ 
  b.	Unified the format some data was shown on the website like dates, square meters, and prices.
+ 
  c.	Identified outliers and manage them accordingly, sometimes through binning and sometimes getting rid of them
+ 
  d.	Evaluate missing data, some could be filled with information from other columns, and in other cases we fill in missing data. 
  
 `3.`	Transform the data. In order to prepare the data for the analysis we had to transform some variables to its logarithmic expression. OneHotEncoder was used to factor in each of the states.
