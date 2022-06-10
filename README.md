@@ -153,15 +153,35 @@ Our mockup database is /Resources/mockData.csv and contains what we think we mig
 
 ## Machine Learning Model
 
+#### Data preprocessing
+
+The data was taken through a web scraping process from a real estate website. This meant that the information was accurate and updated but we dealt with other issues like the number of features added for each estate. Once we had the data, we took the following steps:
+`1.` Assess the quality of the data. We verified that the data was reliable, and that the information was accurate. At a first glance, it was possible to see that we were working with different data types, that some outliers might skew our analysis and we saw that there were some missing data that needed to be managed.	
+`2.` Clean the data. 
+``a.`` All unnecessary columns were eliminated, IDs, links and other internal identification codes were not relevant for the machine learning model. 
+
+b.	Unified the format some data was shown on the website like dates, square meters, and prices.
+c.	Identified outliers and manage them accordingly, sometimes through binning and sometimes getting rid of them
+d.	Evaluate missing data, some could be filled with information from other columns, and in other cases we fill in missing data. 
+3.	Transform the data. In order to prepare the data for the analysis we had to transform some variables to its logarithmic expression. OneHotEncoder was used to factor in each of the states.
+4.	Reduce the data. We planned on building three different models, one for each type of properties analyzed (houses, apartments and land) so we kept only the relevant columns for each one. 
+### Description of feature engineering and feature selection, with decision making process
+Feature Engineering
+As it was mentioned before, the dataset had a significant number of missing values. For features like parking spaces, all missing values were filled with 0, this numerical imputation would allow us to consider the feature without eliminating rows with missing values.
+For the handling of outliers, we opted for removal in certain features like rooms, bathrooms or square meters. Capping was considered but an arbitrary value had a negative impact in the accuracy level of our model. 
+Even after handling outliers some features still showed some sort of skewed distribution. We used Log Transform for the features of prices and square meters (floor area and lot area).
+Feature Selection 
+In order to decide which features to keep for our model, we analyzed the correlation between the different variables and the price of the property. High correlations (0.44 and 0.49) were found between lot area and floor area with price. The number of bathrooms and the number of parking spaces also showed significant correlation (0.47 and 0.44, respectively) with the price.
+Other features, like latitude and longitude, although useful for the visualization of our data, proved to impact negatively our model, so we decided to eliminate it from our dataset.
+
+### How data was split into training and testing sets
+We used train_test_split from the sklearn.model_selection library to split our data into training and testing sets. We used random sampling to protect the data from any bias and because we didn’t input a test size in the parameters it was set by default to 0.25, which mean the train was automatically set to 0.75.
+
 For this project our model will be done with supervised learning, using examples and labels to find patterns in our data. We will be using a linear regression model under the assumption that the relationship between the price (dependent continuous variable) and the other more explanatory house features is linear. 
 
 It is also worth mentioning that this is a regression model because we want to predict a numerical outcome (price). Because of this, our first approach is the Random Forest classifier, to learn from data and aggregate their resulting predictions.
 
-The following image shows our first attempt to model our data after all the necessary imports:
-
-![ML_model1](Resources/ML_model1.PNG)
-
-We are aware that this is our first approach and that we will have to go through several iterations and even alterations to get our model up to a high standard.
+Limitations of the model have to do with the fact that we are using states as features and although they provide sufficient information, a division by municipalities, neighborhoods or zip codes would probably provide a higher accuracy. However, data is not easily obtained, and it might result in overfitting.
 
 ## Training and Improving our Machine Learning model
 
