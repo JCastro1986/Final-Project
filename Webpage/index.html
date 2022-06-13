@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TACC | Real Estate</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+</head>
+<body>
+    
+    <header class="header" id="inicio">
+        <img class="hamburguer" src="img/hamburguesa.svg" alt="">
+        <nav class="menu-navegacion">
+                <a href="#inicio">Home</a>
+                <a href="#mapping">Mapping</a>
+                <a href="#appraisal">Appraisal</a>
+                <a href="#opportunities">Opportunities</a>
+                <a href="#footer">Contact</a>
+        </nav>
+        <div class="head contenedor">
+            <h1 class="titulo">Real Estate in Mexico</h1>
+            <p class="copy">Please select the estate you are looking for. . .</p>
+        </div>
+        
+    </header>
+    <main>
+
+        <section class="mapping" id="mapping">
+           <div class="contenedor"> 
+                <h2 class="subtitulo">Mapping</h2>
+                <div class="contenedor-mapping">
+                    <body>
+                        <div class='tableauPlaceholder' id='viz1654564083720' style='position: relative'>
+                            <noscript><a href='#'><img alt='CitiBike ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Q6&#47;Q62YMSNZ8&#47;1_rss.png' style='border: none' /></a>
+                            </noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> 
+                                <param name='path' value='shared&#47;Q62YMSNZ8' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Q6&#47;Q62YMSNZ8&#47;1.png' /> 
+                                <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' />
+                                <param name='language' value='es-ES' /></object></div>                
+                                <script type='text/javascript'>                    var divElement = document.getElementById('viz1654564083720');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1116px';vizElement.style.height='591px';                    
+
+                                var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+                                </script>"
+                    </body>
+
+                    
+                    <input type="button" id='script' name="scriptbutton" value=" Run Script " onclick="goPython()">
+
+                    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+                    <script>
+                        function goPython(){
+                            $.ajax({
+                            url: "MYSCRIPT.py",
+                            context: document.body
+                            }).done(function() {
+                            alert('finished python script');;
+                            });
+                        }
+                    </script>
+
+                </div>    
+            </div>
+        </section>
+
+        <section class="gallery" id="appraisal">
+            <div class="contenedor">
+                <h2 class="subtitulo">Do you want to know the price of your property?</h2>
+                <div class="contenedor-galeria">
+                    <img src="img/apt.jpg" class="img-galeria" alt="">
+                    <h3 class="real-type">Appartaments</h3>
+                </div>
+                <div class="contenedor-galeria">
+                    <img src="img/hou.jpg" class="img-galeria" alt="">
+                    <h3 class="real-type">Houses</h3>
+                </div>
+                <div class="contenedor-galeria">
+                    <img src="img/lan.jpg" class="img-galeria" alt="">
+                    <h3 class="real-type">Lands</h3>
+                </div>
+            </div>
+        </section>
+
+        <div class="imagen-light">
+            <img src="img/close.svg" alt="" class="close">
+            <img src="" alt="" class="agregar-imagen">
+        </div>
+
+        <section class="opportunities" id="opportunities"> 
+            <div class="contenedor">
+                <h2 class="subtitulo">Best deals:</h2>
+                <div class="row">
+                    <div class="col-md-3">
+                        <form class="">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <label for="state">Enter a State</label>
+                                        <input type="text" placeholder="Ciudad de México" id="State" />
+                                    </li>
+                                    <li class="list-group-item">
+                                        <label for="date">Enter a Municipality</label>
+                                        <input type="text" placeholder="Benito Juárez" id="municipality" />
+                                    </li>
+                                    <li class="list-group-item">
+                                        <label for="city">Enter a Type </label>
+                                        <input type="text" placeholder="House" id="house" />
+                                    </li>
+                                    <li class="list-group-item">
+                                    <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>                          
+                                    </li>  
+                                </ul>
+                        </form>
+                    </div>
+                    <div class="col-md-9">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>State</th>
+                                    <th>Type</th>
+                                    <th>Price</th>
+                                    <th>Land</th>
+                                    <th>Usable Area</th>
+                                    <th>Rooms</th>
+                                    <th>Bathrooms</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                          </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="contenedor footer-content">
+                <div class="contact-us">    
+                    <h2 class="brand">Treviño, Brenda</h2>
+                    <p class="git">https://github.com/brendatreto</p>
+
+                    <h2 class="brand">Acosta, Carlos</h2>
+                    <p class="git">https://github.com/cacostamx</p>
+               
+                    <h2 class="brand">Castro, Jorge</h2>
+                    <p class="git">https://github.com/JCastro1986</p>
+                
+                    <h2 class="brand">Carmona, Fernando</h2>
+                    <p class="git">https://github.com/LZaack</p>
+                </div>
+                <div class="footer-logo">
+                    <img src="img/logo.png" class="logo" alt="">
+                </div>                
+                <div class="social-media">
+                    <a href="./" class="social-media-icon">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                    <a href="./" class="social-media-icon">
+                        <i class='bx bxl-twitter' ></i>
+                    </a>
+                    <a href="./" class="social-media-icon">
+                        <i class='bx bxl-instagram' ></i>
+                    </a>
+                </div>
+        </div>
+        <div class="line"></div>
+    </footer>
+   
+    <script src="js/menu.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>

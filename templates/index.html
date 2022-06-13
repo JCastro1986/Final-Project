@@ -1,0 +1,13 @@
+/templates/index.html
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block Result %} Result {% endblock %}</h1>
+        <div class='result'>
+            <h2>{{ result }}</h2>
+        </div>
+    <h1>{% block Data %} SQL data {% endblock %}</h1>
+        <div class='data'>
+            <h2>{{ data }}</h2>
+        </div>
+{% endblock %}
