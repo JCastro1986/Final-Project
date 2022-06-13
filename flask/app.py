@@ -95,11 +95,11 @@ def getDataCsv():
 # Seleccion de modelo
 def modelSel(tipo):
     if tipo == 'House':
-        model = pickle.load(open('../modeloCasas.pkl','rb'))
+        model = pickle.load(open('./modeloCasas.pkl','rb'))
     elif tipo == 'Apartment':
-        model = pickle.load(open('../modeloDepas.pkl','rb'))
+        model = pickle.load(open('./modeloDepas.pkl','rb'))
     else:
-        model = pickle.load(open('../modeloTerrenos.pkl','rb'))
+        model = pickle.load(open('./modeloTerrenos.pkl','rb'))
     return model
 
 @app.route('/',methods=["GET","POST"])
