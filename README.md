@@ -12,7 +12,6 @@ You can watch the Storyboard on Google Slide: [PROPERTIES PRICE ESTIMATION](http
 
 You can watch the Storyboard on Tableau: [PROPERTIES PRICE ESTIMATION](https://public.tableau.com/app/profile/jorge.castro2269/viz/AnalysisofRealEstatePricesinMexico/Historia1?publish=yes)
 
-
 # HOUSING PRICES IN MEXICO
 
 ![PricingUp](/Resources/PricingUp.png)
