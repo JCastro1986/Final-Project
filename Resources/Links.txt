@@ -1,0 +1,17 @@
+Links
+
+DASHBOARD EXAMPLE# 1
+https://danielcorcoranssql.wordpress.com/2017/03/15/power-bi-real-estate-dashboard/
+
+DASHBOARD EXAMPLE# 2
+https://apps.planning.maryland.gov/hb1045/index.html
+
+DASHBOARD EXAMPLE# 3
+https://www.thesmallman.com/dashboards
+
+HeatMap:
+Relación Precio Ubicación
+
+Datos Dependientes:
+Ubiacion 
+M2
