@@ -1,0 +1,1 @@
+FLASK_APP=tacc/app.py flask run

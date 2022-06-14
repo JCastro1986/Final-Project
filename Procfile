@@ -1,0 +1,1 @@
+web: gunicorn tacc.app:app
