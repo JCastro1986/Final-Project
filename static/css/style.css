@@ -15,7 +15,7 @@ body{
 .header{
     height: 100vh;
     /* 02 */
-    background-image: linear-gradient(to top, rgba(251, 194, 235, 0.5) 0%, rgba(165, 192, 238, 0.5) 100%), url("../img/map.jpg");
+    background-image: linear-gradient(to top, rgba(12, 15, 207, 0.603) 0%, rgba(76, 130, 223, 0.603) 100%), url("../img/map.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;  
@@ -46,6 +46,7 @@ body{
 
 .menu-navegacion{
     position: fixed;
+    z-index: 50;
     top: 0;
     width: 30vw;
     height: 100%;
@@ -79,35 +80,36 @@ body{
     max-width: 1200px;
     overflow: hidden;
     margin: auto;
+    padding: 60px 0;
 }
 
 .titulo{
-    color: rgb(255, 255, 255);
+    color: rgb(243, 236, 236);
     text-align: center;
-    font-size: 60px;
+    font-size: 100px;
     margin-bottom: 15px;
 }
 
 .copy{
-    color: #f8cff8;
+    color: #ec9c66;
     text-align: center;
     font-weight: 300;
-    font-size: 25px;
+    font-size: 50px;
 }
 
 .subtitulo{
-    color: #060f0f;
+    color: #043e58;
     font-size: 50px;
     text-align: center;
     font-weight: 400;
-    margin-top: 40px;
-    margin-bottom: 60px;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 /* Mapping */
 
 .mapping{
-    height: 100vh;
+    height: auto;
     background-image: linear-gradient(to top, rgba(251, 194, 235, 0.486) 0%, hsla(218, 68%, 79%, 0.514) 100%), url("../img/5.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -135,107 +137,45 @@ body{
     background-size: cover;
 }
 
-.contenedor-galeria{
-    width: 30%;
-    display: inline-block;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 30px;
-}
-
-.img-galeria{
-    width: 100%;
-    display: flex;
-    margin-bottom: 15px;
-    box-shadow: 0 0 6px rgba(0, 0, 0, .6);
-    cursor: pointer;
-}
-
-.real-type{
-    width: 100%;
-    display: center;
-    text-align: center;
+.sub{
+    color: #c95a10;
+    font-size: 25px;
+    text-align: left;
+    font-weight: 200;
     margin-top: 10px;
-    font-weight: 700;
-}
-
-.imagen-light{
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.534);
-    transform: translate(100%);
-    transition: transform .2s ease-in-out;
-}
-
-.agregar-imagen{
-    width: 60%;
-    transform: scale(0);
-    border-radius: 10px;
-    transition: transform .3s .2s;
-}
-
-.showImage{
-    transform: scale(1);
-}
-
-.show{
-    transform: translate(0);
-}
-
-.close{
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    width: 40px;
-    cursor: pointer;
+    margin-bottom: 20px;
 }
 
 /* Opportunities */
 
 .opportunities{
     height: 100vh;
-    background-image: linear-gradient(to top, rgba(251, 194, 235, 0.486) 0%, hsla(218, 68%, 79%, 0.514) 100%), url("../img/6.jpg");
+    background-image: linear-gradient(to top, rgba(243, 169, 223, 0.486) 0%, hsla(219, 81%, 72%, 0.514) 100%);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-.list-group{
-    background: rgba(250, 250, 250, 0.5)
-}
-
-.experts{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.cont-expert{
-    width: 30%;
+.tableD3{
+    color: #060f0f;
+    font-size: 50px;
     text-align: center;
+    font-weight: 400;
+    margin-top: 30px;
     margin-bottom: 20px;
 }
 
-.cont-expert img{
-    display: block;
-    margin: auto;
-    width: 80%;
+.table{
+    overflow: scroll;
+    scroll-behavior: smooth;
+    table-layout: auto;
+    font-size: 12px;
 }
 
-.n-expert{
-    width: 100%;
-    display: inline-block;
-    margin-top: 20px;
-    font-weight: 400;
+.resultados th{
+    width: 110px;
+    overflow: initial;
+    border: 1px solid;
 }
 
 /* Footer */
@@ -254,7 +194,7 @@ footer{
     align-items: center;
     flex-wrap: wrap;
     padding-top: 60px;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
 }
 
 .contact-us{
@@ -310,7 +250,7 @@ footer{
     width: 90%;
     max-width: 1200px;
     margin: auto;
-    height: 2px;
+    height: 3px;
     background: #fff;
     margin-bottom: 60px;
 }

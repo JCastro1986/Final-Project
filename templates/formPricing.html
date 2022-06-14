@@ -1,73 +1,88 @@
 {% extends "base.html" %}
 {% block content %}
-<form class="col-md-6" method="POST" action="{{ url_for('formPricing') }}">
-    <div class="input-group mb-2">
-        <label class="list-group" for="inputGroupSelect01" id="type">Type</label>
-        <select class="form-control" name="type">
-            {% for tipo in listaTipos %}
-            <option value="{{ tipo.name }}" {% if tipo.name == 'House' %} selected {% endif %}>{{ tipo.name }}</option>
-            {% endfor %}        
-        </select>
-    </div>
-    <br>
-    <div class="list-group mb-2">
-        <label class="input-group-text" for="inputGroupSelect02" id="State">State</label>
-        <select class="form-control" name="estadoSelecc">
-        {% for ent in listaEntidades %}
-        <option value="{{ ent.name }}" {% if ent.name == 'Ciudad de México' %} selected {% endif %}>{{ ent.name }}</option>
-        {% endfor %}
-        </select>
-    </div>
-    <br>
-    <div class="input-group mb-2">
-        <label class="input-group-text" for="inputGroupSelect03" id="type">Construction Area</label>
-        <input type="text" name="m2Construccion" placeholder="100" value="100" class="form-control" aria-describedby="basic-addon2">
-        <span class="input-group-text" id="basic-addon2">m2</span>
-    </div>
-    <br>
-    <div class="input-group mb-2">
-        <label class="input-group-text" for="inputGroupSelect04" id="type">Land Size</label>
-        <input type="text" name="m2Terreno" placeholder="200" value = "200" class="form-control" aria-describedby="basic-addon2">
-        <span class="input-group-text" id="basic-addon2">m2</span>
-    </div>
-    <br>
-    <div class="list-group mb-2">
-        <label class="input-group-text" for="inputGroupSelect05" id="banos">Number of bathrooms</label>
-        <select class="form-control" name="banos">
-        {% for ent in listaBanos %}
-        <option value="{{ ent.name }}" {% if ent.name == '2.5' %} selected {% endif %}>{{ ent.name }}</option>
-        {% endfor %}
-        </select>
-    </div>
-    <br>
-    <div class="list-group mb-2">
-        <label class="input-group-text" for="inputGroupSelect06" id="parking">Number of parking spaces</label>
-        <select class="form-control" name="estacionamientos">
-        {% for ent in listaParking %}
-        <option value="{{ ent.name }}" {% if ent.name == '2' %} selected {% endif %}>{{ ent.name }}</option>
-        {% endfor %}
-        </select>
-    </div>
-    <br>
-    <div class="input-group mb-2">
-        <label class="input-group-text" for="inputGroupSelect07" id="antiguiedad">Age or property</label>
-        <input type="text" name="antiguedad" placeholder="5" value = "5" class="form-control" aria-describedby="basic-addon2">
-        <span class="input-group-text" id="basic-addon2">years</span>
-    </div>
-    <br>
-    <button class="btn btn-primary" type="submit">Calculate</button>
+<div class="row">
+    <div class="col-md-5">
+        <form class="list" method="POST" action="{{ url_for('formPricing') }}">
 
-</form>
-<br>
-{% if resultado %}
-<div class="col-md-6">
-    <div class="alert alert-info" role="alert">
-        <h2>{{ resultado }}</h2>
-        <form action="/#appraisal">
-            <input type="submit" value="Reset" />
+            <div class="input-group mb-2">
+                <label class="input-group-text" for="inputGroupSelect01" id="type">Type</label>
+                <select class="form-control" name="type">
+                    {% for tipo in listaTipos %}
+                    <option value="{{ tipo.name }}" {% if tipo.name == 'House' %} selected {% endif %}>{{ tipo.name }}</option>
+                    {% endfor %}        
+                </select>
+            </div>
+            
+            <div class="list-group mb-2">
+                <label class="input-group-text" for="inputGroupSelect02" id="State">State</label>
+                <select class="form-control" name="estadoSelecc">
+                    {% for ent in listaEntidades %}
+                    <option value="{{ ent.name }}" {% if ent.name == 'Ciudad de México' %} selected {% endif %}>{{ ent.name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            
+            <div class="input-group mb-2">
+                <label class="input-group-text" for="inputGroupSelect03" id="type">Construction Area</label>
+                <input type="text" name="m2Construccion" placeholder="100" value="100" class="form-control" aria-describedby="basic-addon2">
+                <span class="input-group-text" id="basic-addon2">m2</span>
+            </div>
+            
+            <div class="input-group mb-2">
+                <label class="input-group-text" for="inputGroupSelect04" id="type">Land Size</label>
+                <input type="text" name="m2Terreno" placeholder="200" value = "200" class="form-control" aria-describedby="basic-addon2">
+                <span class="input-group-text" id="basic-addon2">m2</span>
+            </div>
+            
+            <div class="list-group mb-2">
+                <label class="input-group-text" for="inputGroupSelect05" id="banos">Number of bathrooms</label>
+                <select class="form-control" name="banos">
+                    {% for ent in listaBanos %}
+                    <option value="{{ ent.name }}" {% if ent.name == '2.5' %} selected {% endif %}>{{ ent.name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="list-group mb-2">
+                <label class="input-group-text" for="inputGroupSelect06" id="parking">Number of parking spaces</label>
+                <select class="form-control" name="estacionamientos">
+                    {% for ent in listaParking %}
+                    <option value="{{ ent.name }}" {% if ent.name == '2' %} selected {% endif %}>{{ ent.name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="input-group mb-2">
+                <label class="input-group-text" for="inputGroupSelect07" id="antiguedad">Age or property</label>
+                <input type="text" name="antiguedad" placeholder="5" value = "5" class="form-control" aria-describedby="basic-addon2">
+                <span class="input-group-text" id="basic-addon2">years</span>
+            </div>
+            
+            <button class="btn btn-primary" type="submit">Calculate</button>
+
         </form>
     </div>
- 
+    {% if resultado %}
+    <div class="col-md-2">
+        <!-- <style> </style>
+        <div class="alert alert-info" role="alert">
+            <h2>{{ resultado }}</h2>
+            <form action="/#appraisal">
+                <input type="submit" value="Reset" />
+            </form>
+        </div> -->
+    </div>
+    <div class="card text-white bg-primary mb-2" style="max-width: 25rem; max-height: 15rem;">
+        <div class="card-header">Thanks for your trust!</div>
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text">{{ resultado }}</p>
+          <br>
+          <form action="/#appraisal">
+            <button type="submit" class="btn btn-success" value="Reset">Reset</button>
+        </form>
+        </div>
+      </div>
+    {% endif %}
+    {% endblock %}
 </div>
-{% endif %}
-{% endblock %}

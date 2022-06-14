@@ -117,8 +117,8 @@ def base():
 def formPricing():
     # Get data from form
     if request.method == 'POST':
-        estadoSelecc = request.form.get('estadoSelecc')
         tipo = request.form.get('type')
+        estadoSelecc = request.form.get('estadoSelecc')
         m2Construccion = float(request.form['m2Construccion'])
         m2Terreno = float(request.form['m2Terreno'])
         banos = float(request.form['banos'])
@@ -166,7 +166,7 @@ def formPricing():
     #selecciona modelo y 
     model = modelSel(tipo)
     predictedValue = round(np.exp(model.predict(predictArray))[0]/1000000,2)*1000000
-    result = f"Predicted price for your {asset} is: $" + "{:,.0f}".format(predictedValue)
+    result = f"According to our model the predicted price for your {asset} is: $" + "{:,.0f}".format(predictedValue)
 
     return render_template('formPricing.html/', listaTipos=listaTipos, listaEntidades=listaEntidades, listaTiposD3=listaTiposD3, resultado=result)
 
