@@ -70,7 +70,7 @@ def getDataCsv():
     # else:
     #     tipo2 = 'terrenos'
     # read csv
-    df = pd.read_csv('./Resources/inmueblesFinalData.csv', encoding='utf-8-sig')
+    df = pd.read_csv('./tacc/Resources/inmueblesFinalData.csv', encoding='utf-8-sig')
     #create empty df
     dfJson = pd.DataFrame(columns = colsCSV)
     #get the top 20 results for tipo and entidad
@@ -95,11 +95,11 @@ def getDataCsv():
 # Seleccion de modelo
 def modelSel(tipo):
     if tipo == 'House':
-        model = pickle.load(open('./modeloCasas.pkl','rb'))
+        model = pickle.load(open('./tacc/modeloCasas.pkl','rb'))
     elif tipo == 'Apartment':
-        model = pickle.load(open('./modeloDepas.pkl','rb'))
+        model = pickle.load(open('./tacc/modeloDepas.pkl','rb'))
     else:
-        model = pickle.load(open('./modeloTerrenos.pkl','rb'))
+        model = pickle.load(open('./tacc/modeloTerrenos.pkl','rb'))
     return model
 
 @app.route('/',methods=["GET","POST"])
