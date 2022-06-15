@@ -22,7 +22,7 @@ Heroku deployment Here!: [PROPERTIES PRICE ESTIMATION](https://tacc-bootcamp.her
 
 ### Topic
 
-Given the importance and growth that the real estate has shown in Mexico in the last few years, we have analyzed and measured the prices of housing and commercial properties considering important features like location, ground and construction surface, age, number of rooms, bathrooms, and parking, etc., by creating a model that can predict the downs and rises of the real estate prices.
+Given the importance and growth that the real estate has shown in Mexico in the last few years, we have analyzed and measured the prices of housing and commercial properties considering important features like location, ground and construction surface, age, number of rooms, bathrooms, and parking, etc., by creating a model that can predict the ups and downs of real estate prices.
 
 ### Justification
 
