@@ -10,7 +10,7 @@ You can watch the following presentation: [PROPERTIES PRICE ESTIMATION](https://
 
 You can watch the Storyboard on Google Slide: [PROPERTIES PRICE ESTIMATION](https://docs.google.com/presentation/d/1oBZPOv5VrmcHvKBZTlqlLSLCKziRQfEUWi8U0p8uQz8/edit?usp=sharing)
 
-You can watch the Storyboard on Tableau: [PROPERTIES PRICE ESTIMATION](https://public.tableau.com/views/AnalysisofRealEstatePricesinMexico/AnalysisofRealEsta[…]ico?:language=en-US&:display_count=n&:origin=viz_share_link)
+You can watch the Storyboard on Tableau: [PROPERTIES PRICE ESTIMATION](https://public.tableau.com/app/profile/jorge.castro2269/viz/AnalysisofRealEstatePricesinMexico/AnalysisofRealEstatePricesinMexico)
 
 # HOUSING PRICES IN MEXICO
 
