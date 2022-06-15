@@ -64,10 +64,10 @@ To achieve our goal, we’ll develop and code at least the next steps.
 
 |Avatar                         |Member        |Role: Segment 1| Icon                               |
 |:-----------------------------:|:------------:|:-------------:|:----------------------------------:|
-![Brenda](/Resources/Brenda.png)|Brenda Treviño|ML model       |![triangle](tacc/Resources/triangle.png)|
-![Luis](/Resources/Luis.png)    |Luis Carmona  |Technology     |![x](tacc/Resources/x.png)              |
-![Carlos](/Resources/Carlos.png)|Carlos Acosta |Database       |![circle](tacc/Resources/circle.png)    |
-![Jorge](/Resources/Jorge.png)  |Jorge Castro  |Repository     |![square](tacc/Resources/square.png)    |
+![Brenda](tacc/Resources/Brenda.png)|Brenda Treviño|ML model       |![triangle](tacc/Resources/triangle.png)|
+![Luis](tacc/Resources/Luis.png)    |Luis Carmona  |Technology     |![x](tacc/Resources/x.png)              |
+![Carlos](tacc/Resources/Carlos.png)|Carlos Acosta |Database       |![circle](tacc/Resources/circle.png)    |
+![Jorge](tacc/Resources/Jorge.png)  |Jorge Castro  |Repository     |![square](tacc/Resources/square.png)    |
 
 ## Resources and Technology
 
