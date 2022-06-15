@@ -101,7 +101,7 @@ We performed the steps mentioned before using the following programs and sources
 
 - Webpage: we used flask to create an app, HTML to make the template, javascript and CSS for the functions and style of the page, and Heroku to deploy it.
 
-![flask](tacc/Resources/flask.png) ![html](tacc/Resources/html.png) ![js](tacc/Resources/js.png) ![css](tacc/Resources/css.png) ![heroku](tacc/Resources/heroku.png)
+![flask](tacc/Resources/flask.png) ![html](tacc/Resources/html.png) ![js](tacc/Resources/js.png) ![css](tacc/Resources/css.png) ![heroku](tacc/Resources/hero.png)
 
 - Software: to perform the analysis, additionally we used Jupyter Notebook v6.4.5, SQLite, and Tensorflow 2.0.
 
