@@ -14,7 +14,7 @@ You can watch the Storyboard on Tableau: [PROPERTIES PRICE ESTIMATION](https://p
 
 # HOUSING PRICES IN MEXICO
 
-![PricingUp](/Resources/PricingUp.png)
+![PricingUp](tacc/Resources/PricingUp.png)
 
 ## Overview
 
@@ -36,7 +36,7 @@ After analyzing several options, we decided to select this topic for the followi
 
 In this first stage of the project, we’ll download the data from `metroscubicos.com`, the third most visited webpage in Mexico which is associated with `Mercadolibre.com`, according to the marketing agency “Impactum”
 
-![metcu](/Resources/metcu.png)
+![metcu](tacc/Resources/metcu.png)
 
 ### Questions to answer
 
@@ -64,10 +64,10 @@ To achieve our goal, we’ll develop and code at least the next steps.
 
 |Avatar                         |Member        |Role: Segment 1| Icon                               |
 |:-----------------------------:|:------------:|:-------------:|:----------------------------------:|
-![Brenda](/Resources/Brenda.png)|Brenda Treviño|ML model       |![triangle](/Resources/triangle.png)|
-![Luis](/Resources/Luis.png)    |Luis Carmona  |Technology     |![x](/Resources/x.png)              |
-![Carlos](/Resources/Carlos.png)|Carlos Acosta |Database       |![circle](/Resources/circle.png)    |
-![Jorge](/Resources/Jorge.png)  |Jorge Castro  |Repository     |![square](/Resources/square.png)    |
+![Brenda](/Resources/Brenda.png)|Brenda Treviño|ML model       |![triangle](tacc/Resources/triangle.png)|
+![Luis](/Resources/Luis.png)    |Luis Carmona  |Technology     |![x](tacc/Resources/x.png)              |
+![Carlos](/Resources/Carlos.png)|Carlos Acosta |Database       |![circle](tacc/Resources/circle.png)    |
+![Jorge](/Resources/Jorge.png)  |Jorge Castro  |Repository     |![square](tacc/Resources/square.png)    |
 
 ## Resources and Technology
 
@@ -75,27 +75,27 @@ We’ll perform the steps mentioned before using the following programs and sour
 
 - Data source: we’ll get raw data scraped from real estate websites to store it as CSV.
 
-![metcu](/Resources/metcu.png) 
+![metcu](tacc/Resources/metcu.png) 
 
 - ETL Process: we’ll use Pandas to read, transform and clean CSV to data frames, as well as to merge additional data, and store it in an SQL database.
 
-![pandas](/Resources/pandas.png) 
+![pandas](tacc/Resources/pandas.png) 
 
 - SQlite Process: we’ll use SQlite to store our cleaned data thet was transform and clean, we will use SQlite to collect our data for our Model process.
  
-![SQlite](/Resources/SQliteImage.jpg) 
+![SQlite](tacc/Resources/SQliteImage.jpg) 
 
 - ML model: we'll use scikit libraries to create a linear regression model and test other models to get the best accuracy for real estate pricing prediction.
 
-![scikit](/Resources/scikit.png) 
+![scikit](tacc/Resources/scikit.png) 
 
 - Dashboard: we’ll use Tableau to import our data and try to use geographical coordinates to show our analyses by entities.
 
-![tableau](/Resources/tableau.png) 
+![tableau](tacc/Resources/tableau.png) 
 
 - Software: to perform the analysis, additionally we’ll use Jupyter Notebook v6.4.5, SQLite, and Tensorflow 2.0.
 
-![jupyter](/Resources/jupyter.png)  ![post](/Resources/post.png) ![tensor](/Resources/tensor.png) 
+![jupyter](tacc/Resources/jupyter.png)  ![post](tacc/Resources/post.png) ![tensor](tacc/Resources/tensor.png) 
 
 ## Github
 
@@ -121,13 +121,13 @@ In this first stage, according to our roles, we created the main branch, and the
 
 The following image shows the two main tables in our database:
 
-![database tables](/Resources/relationalTables.png)
+![database tables](tacc/Resources/relationalTables.png)
 
 Besides the data from the webscraping, we will obtain information regarding the location (lat, long) for each ***municipality*** so that we can plot them on a map and make an analysis by zip codes.
 
 Our mockup database is /Resources/mockData.csv and contains what we think we might get from the webscrapping process. The following image shows the structure of the CSV loaded into a Pandas DataFrame:
 
-![database preview](/Resources/databaseDF.png)
+![database preview](tacc/Resources/databaseDF.png)
 
 ## Data Retreival Process
 
@@ -141,15 +141,15 @@ Our mockup database is /Resources/mockData.csv and contains what we think we mig
 
 `5.` With the single file ready we performed the ETL process. The data was messy and needed to be cleaned deeply.
 
-![](Resources/ETLclean1.png)
+![](tacc/Resources/ETLclean1.png)
 
 `6.` After our data was cleaned we merged the data into a single file. 
 
-![](Resources/ETLmerge.png)
+![](tacc/Resources/ETLmerge.png)
 
 `7.` After we add the final file containing all the information we created a table using SQlite in order to store our results.
 
-![](Resources/ETLsql.png)
+![](tacc/Resources/ETLsql.png)
 
 `8.` After we had our data base ready we started our Machine Learning Model.
 
@@ -210,25 +210,25 @@ In the beginning, the first R Score was 25%.
 
 `1.` **First Attempt**
 
-![](Resources/R-Score_25%25.jpeg)
+![](tacc/Resources/R-Score_25%25.jpeg)
 
 We continue working to improve the model, it went better when it got to 35%.
 
 `2.` **Second Attempt**
 
-![](Resources/R-Score_35%25.jpg)
+![](tacc/Resources/R-Score_35%25.jpg)
 
 However we wanted more, so more attempts were made...
 
 `3.` **Third Attempt**
 
-![](Resources/R-Score_42%25.jpeg)
+![](tacc/Resources/R-Score_42%25.jpeg)
 
 We continue improving our model, and by using Random Forest Regressor we were able to obtain our best R score so far, 67%
 
 `4.` **Fourth Attempt**
 
-![](Resources/R-Score_67%25.jpeg)
+![](tacc/Resources/R-Score_67%25.jpeg)
 
 ### Current Accuracy Scores
 
