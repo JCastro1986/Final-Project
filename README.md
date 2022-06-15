@@ -12,6 +12,8 @@ You can watch the Storyboard on Google Slide: [PROPERTIES PRICE ESTIMATION](http
 
 You can watch the Storyboard on Tableau: [PROPERTIES PRICE ESTIMATION](https://public.tableau.com/app/profile/jorge.castro2269/viz/AnalysisofRealEstatePricesinMexico/AnalysisofRealEstatePricesinMexico)
 
+Heroku deployment Here!: [PROPERTIES PRICE ESTIMATION](https://tacc-bootcamp.herokuapp.com/)
+
 # HOUSING PRICES IN MEXICO
 
 ![PricingUp](tacc/Resources/PricingUp.png)
